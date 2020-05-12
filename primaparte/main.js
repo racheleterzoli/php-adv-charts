@@ -47,8 +47,11 @@ function printPieChartDemo(){
     url:"server.php",
     method:"GET",
     success: function (fullData){
-      var labels = fullData.labels;
-      var data = fullData.data;
+
+      console.log(fullData);
+
+      var labels = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio','agosto','settembre','ottobre','novembre','dicembre'];
+      var data = fullData;
       console.log("labels", labels);
       console.log("data",data);
 
